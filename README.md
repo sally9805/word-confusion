@@ -9,5 +9,5 @@ To quickly run the code using pre-generated embeddings:
 - Run Word Confusion >> PCA + Classifier section
 ## Run from scratch
 To run the analysis with _Archives Parlementaires_ corpora:
-- Download the data from [https://sul-philologic.stanford.edu/philologic/archparl/](https://sul-philologic.stanford.edu/philologic/archparl/). Due to [Stanford Terms of Use](https://www.stanford.edu/site/terms/), we are unable to reproduce or copy the data here. However, it is publicly available from link.
+- Download the data from [https://sul-philologic.stanford.edu/philologic/archparl/](https://sul-philologic.stanford.edu/philologic/archparl/). Due to [Stanford Terms of Use](https://www.stanford.edu/site/terms/), we are unable to reproduce or copy the data here. However, it is publicly available via the [link]([url](https://sul-philologic.stanford.edu/philologic/archparl/)).
 - Run the notebook `revolution/revolution.ipynb` from the beginning.
