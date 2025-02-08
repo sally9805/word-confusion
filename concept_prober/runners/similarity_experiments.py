@@ -22,7 +22,7 @@ if __name__ == "__main__":
     #######################################################################################################
 
     embedding_config = EmbeddingConfig(
-        model_name="bert-base-uncased",
+        model_name="bert-base-cased",
         embedding_averaging=True,
         embedding_unit_normalization=True,
         embedding_layers_to_average=[9, 10, 11, 12],
