@@ -15,8 +15,8 @@ requirements = [ ]
 test_requirements = [ ]
 
 setup(
-    author="Federico Bianchi",
-    author_email='audreyr@example.com',
+    author="Haishan Gao",
+    author_email='hsgao@stanford.edu',
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

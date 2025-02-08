@@ -5,7 +5,8 @@ Credits
 Development Lead
 ----------------
 
-* Federico Bianchi <audreyr@example.com>
+* Kaitlyn Zhou <katezhou@stanford.edu>
+* Haishan Gao <hsgao@stanford.edu>
 
 Contributors
 ------------
