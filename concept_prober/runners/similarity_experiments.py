@@ -33,7 +33,7 @@ if __name__ == "__main__":
         max_samples_for_texts=1000,
         min_words=20,
         max_words=200,
-        random_seed=14
+        random_seed=42
         )
 
     training_data_sampling_config = TrainingDataSamplingConfig(
@@ -51,7 +51,7 @@ if __name__ == "__main__":
         DATA_FOLDER,
         BASE_DIR_CACHE,
         language="english",
-        random_seed=14
+        random_seed=42
         )
 
     #######################################################################################################
