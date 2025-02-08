@@ -38,7 +38,7 @@ setup(
     packages=find_packages(include=['concept_prober', 'concept_prober.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/vinid/concept_prober',
+    url='https://github.com/sally9805/word-confusion',
     version='0.1.0',
     zip_safe=False,
 )

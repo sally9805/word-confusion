@@ -9,10 +9,18 @@ from concept_prober.src.components.prober import Prober
 from concept_prober.runners.metrics import *
 from concept_prober.src.components.config import *
 
+DATASET = "french_gender_probing"
+LANGUAGE = "french"
+MODEL = "bert-base-cased"
+if LANGUAGE == "french":
+    MODEL = "dbmdz/bert-base-french-europeana-cased"
+elif LANGUAGE == "italian":
+    MODEL = "dbmdz/bert-base-italian-cased"
+
 if __name__ == "__main__":
 
 
-    embedding_config = EmbeddingConfig(model_name="dbmdz/bert-base-french-europeana-cased",
+    embedding_config = EmbeddingConfig(model_name=MODEL,
                                        embedding_averaging=True,
                                        embedding_unit_normalization=True,
                                        embedding_layers_to_average=[9, 10, 11, 12])
@@ -26,7 +34,7 @@ if __name__ == "__main__":
                                                                balancing_value_seeds=1000, 
                                                                balancing_value_instances=500)
 
-    config = Experiment(embedding_config, occurrences_config, training_data_sampling_config, "classification/french_gender_probing.json", DATA_FOLDER, BASE_DIR_CACHE, language="french", random_seed=42)
+    config = Experiment(embedding_config, occurrences_config, training_data_sampling_config, f'classification/{DATASET}.json', DATA_FOLDER, BASE_DIR_CACHE, language=LANGUAGE, random_seed=42)
 
     text_loader = TextDataLoader(config)
     texts = text_loader.load_data(folder_path=DATA_FOLDER)
